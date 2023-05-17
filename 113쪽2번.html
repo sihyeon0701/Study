@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = 0;
+        const number = prompt("1보다 큰 수를 입력하시오.");
+        for(let i = 0; i <= number; i++) {
+            if(i > 0){ //입력한 숫자가 0보다 크면 실행
+                if(i % 2 == 0) { //입력한 숫자가 짝수이면 sum에 값을 저장 
+                sum = sum + i;
+                document.write(`${i}----${sum}<br>`);
+                } 
+            }
+        }
+    </script>
+</body>
+</html>
