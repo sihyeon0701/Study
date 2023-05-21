@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isol</title>
+    <style>
+    #st {
+            background-color:darkgray;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: arial;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+    }
+    body {
+          background-color: white;
+          color: black;
+        }
+  
+        .dark {
+          background-color: black;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+        <input id="st" type="button" value="mode" onclick="toggleDarkMode()">
+        <script>
+            function toggleDarkMode() {
+                var body = document.getElementsByTagName('body')[0];
+                var currentClass = body.className;
+                body.className = currentClass === 'dark' ? '' : 'dark';
+                }
+        </script>
+</body>
+</html> 
